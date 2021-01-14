@@ -31,6 +31,7 @@ function addItems() {
         // document.getElementById("output").innerHTML = items; 
         console.log(items);
         document.getElementById("show-output").innerHTML = loopItem();
+        document.getElementById("inputText").value ="";
     }
     
 }
