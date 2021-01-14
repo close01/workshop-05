@@ -2,59 +2,72 @@
     font-family: Kanit;
     src: url('font/Kanit/Kanit-Regular.ttf');
   }
-  body{background-image: url(./img/bg.jpg);}
+  *{
+    font-family: Kanit;
+    font-size: 20px;
+}
 .box{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 80%;
-    margin: 60px auto;
+}
+.box-out{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    border-radius: 8px;
 }
 input{
-    width: 250px;
-    height: 30px;
-    margin-right: 10px;
-    background-color: aquamarine;
+    width: 408px;
+    height: 40px;
+    margin-right: 6px;
+    background-color: #e8f0fe;
     border-radius: 8px;
     border: transparent;
     padding-left: 10px;
     color: black;
 }
+.input{
+    margin: 60px 0px 20px;
+}
+.output{
+    width: 300px;
+    color: black;
+    padding-left: 10px;
+    margin: 0px 10px 0px 0px;
+    background-color: #e8f0fe;
+    height: 40px;
+    border-radius: 8px;
+}
+
 button{
-    width: 80px;
-    height: 32px;
+    width: 100px;
+    height: 40px;
     background-color: black;
     color: #ffff;
     border-radius: 8px;
     border: transparent;
-    transition: transform .2s;
 }
-.out{
-    width: 300px;
-    align-self: center;
-    color: white;
-    border-bottom: 1px solid;
-    border-color: black;
+.add-btn:hover{
+    color: black;
+    border: black 3px solid;
+    background-color: transparent;
 }
-.box-out{
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    /* background-color: blanchedalmond; */
-    border-radius: 8px;
+.delete-btn{background-color: crimson;}
+.delete-btn:hover{
+    color:  crimson;
+    border:  crimson 3px solid;
+    background-color: transparent;
 }
-.bg-red{background-color: crimson;}
-.bg-blue{background-color: transparent;}
-.bg-green{background-color: darkgreen;}
-
-*{
-    font-family: Kanit;
-    font-size: 18px;
+.done-btn{background-color: darkcyan;}
+.done-btn:hover{
+    color: darkcyan;
+    border: darkcyan 3px solid;
+    background-color: transparent;
 }
-.input{
-    margin-bottom: 60px;
-}
-button:hover{
-    transform: scale(1.1);
-    color: rgb(255, 255, 94);
+.edit-btn{background-color: green;  margin-right: 10px;}
+.edit-btn:hover{
+    color: green;
+    border: green 3px solid;
+    background-color: transparent;
 }
