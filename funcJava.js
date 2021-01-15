@@ -39,7 +39,7 @@ function editItem(edit_id){
     var inputEdit =
     `<div id = 'e${edit_id}'>
         <input id='inputNewEdit${edit_id}' type='text' value='${items[edit_id]}'/>
-        <button class='bg-blue' id='editbtn' onClick='editItemDone(${edit_id})'>Done</button>
+        <button class='done-btn' id='editbtn' onClick='editItemDone(${edit_id})'>Done</button>
     </div>`;
     document.getElementById(edit_id).innerHTML = inputEdit;
 }
